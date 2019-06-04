@@ -137,8 +137,6 @@
             }
             else
             {
-
-                var Movies = "";
                 WebGrid webGrid = new WebGrid(Model, canPage: true, rowsPerPage: 20);
 
                 <div class="col-md-11 col-md-offset-1">
@@ -158,38 +156,6 @@
              webGrid.Column("Director", "City"),
              webGrid.Column("Year", "Country")))
 
-                        <table style="width:100%; margin-top: 50px">
-
-                            <tr>
-
-                                <th>Title</th>
-
-                                <th>Genre</th>
-
-                                <th>Director</th>
-
-                                <th>Year</th>
-
-                                <th>Budget</th>
-
-                            </tr>
-                            @*@for (int i = 0; i < Movies.Tables[0].Rows.Count; i++)
-                                {
-                                    <tr>
-
-                                        <td>@Movies.Tables[0].Rows[i][1].ToString()</td>
-
-                                        <td>@Movies.Tables[0].Rows[i][2].ToString()</td>
-
-                                        <td>@Movies.Tables[0].Rows[i][3].ToString()</td>
-
-                                        <td>@Movies.Tables[0].Rows[i][5].ToString()</td>
-
-                                        <td>@Movies.Tables[0].Rows[i][6].ToString()</td>
-
-                                    </tr>
-                                }*@
-                        </table>
                     </div>
                 </div>
             }
