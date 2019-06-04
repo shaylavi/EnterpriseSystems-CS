@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaModel", "BusinessLogin\MediaModel.csproj", "{27E22480-768F-4616-AD39-EDA350F84E95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaDS", "MediaDS\MediaDS.csproj", "{5AB35155-1C16-419C-BB8E-D85E7749E240}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaBrowser", "MediaBrowser\MediaBrowser.csproj", "{8B5AB0F5-D4DD-4F6A-9DAC-0CAD649375E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionsManager", "ExceptionsManager\ExceptionsManager.csproj", "{D535AC1B-FB7A-4F51-835B-62E418EA7528}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebMediaBrowser", "WebMediaBrowser\WebMediaBrowser.csproj", "{3D791DF3-875D-479B-AD4A-E54E24B91878}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C10CAE5C-0C83-4974-8403-D03FE88DD067} = {C10CAE5C-0C83-4974-8403-D03FE88DD067}
+		{E7E166F7-81D4-44A2-9A58-387F41CB68B5} = {E7E166F7-81D4-44A2-9A58-387F41CB68B5}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserValidation", "UserValidation\UserValidation.csproj", "{C10CAE5C-0C83-4974-8403-D03FE88DD067}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaManagerWS", "MediaManagerWS\MediaManagerWS.csproj", "{E7E166F7-81D4-44A2-9A58-387F41CB68B5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27E22480-768F-4616-AD39-EDA350F84E95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27E22480-768F-4616-AD39-EDA350F84E95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27E22480-768F-4616-AD39-EDA350F84E95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27E22480-768F-4616-AD39-EDA350F84E95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AB35155-1C16-419C-BB8E-D85E7749E240}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AB35155-1C16-419C-BB8E-D85E7749E240}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AB35155-1C16-419C-BB8E-D85E7749E240}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AB35155-1C16-419C-BB8E-D85E7749E240}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B5AB0F5-D4DD-4F6A-9DAC-0CAD649375E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B5AB0F5-D4DD-4F6A-9DAC-0CAD649375E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B5AB0F5-D4DD-4F6A-9DAC-0CAD649375E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B5AB0F5-D4DD-4F6A-9DAC-0CAD649375E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D535AC1B-FB7A-4F51-835B-62E418EA7528}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D535AC1B-FB7A-4F51-835B-62E418EA7528}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D535AC1B-FB7A-4F51-835B-62E418EA7528}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D535AC1B-FB7A-4F51-835B-62E418EA7528}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D791DF3-875D-479B-AD4A-E54E24B91878}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D791DF3-875D-479B-AD4A-E54E24B91878}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D791DF3-875D-479B-AD4A-E54E24B91878}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D791DF3-875D-479B-AD4A-E54E24B91878}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C10CAE5C-0C83-4974-8403-D03FE88DD067}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C10CAE5C-0C83-4974-8403-D03FE88DD067}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C10CAE5C-0C83-4974-8403-D03FE88DD067}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C10CAE5C-0C83-4974-8403-D03FE88DD067}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7E166F7-81D4-44A2-9A58-387F41CB68B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7E166F7-81D4-44A2-9A58-387F41CB68B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7E166F7-81D4-44A2-9A58-387F41CB68B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7E166F7-81D4-44A2-9A58-387F41CB68B5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9834F288-A02C-4CAE-AA64-43B1DEF1F577}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,55 @@
+﻿@{
+    bool userLoggedIn = false;
+    WebMediaBrowser.UserValidationWSRef.UserWSDTO currentUser = null;
+    if (Session["UserLoggedIn"] != null)
+    {
+        currentUser = (WebMediaBrowser.UserValidationWSRef.UserWSDTO)Session["UserLoggedIn"];
+        userLoggedIn = true;
+    }
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-toggleable-md navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("AIT Digital Movies Library", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    @{ if (userLoggedIn)
+                        {
+                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                            <li>@Html.ActionLink("Search", "Search", "Home")</li>
+                            <li>@Html.ActionLink("About", "About", "Home")</li>
+                            <li>@Html.ActionLink("Logout", "Logout", "Home")</li>
+                        }
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid body-content">
+        @RenderBody()
+    </div>
+    <footer class="container-fluid text-right" style="height: 67px">
+        <hr style="border-top: 1px solid gray;" />
+        © Shay Lavi, 6498 - May 2019, AIT Melbourne
+    </footer>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
